@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  images = [1, 2, 3, 4].map((n) => `../../../assets/img/carousel/carousel_img_${n}.jpg`);
+
   constructor(
   ) { }
 
