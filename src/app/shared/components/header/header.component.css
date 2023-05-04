@@ -71,7 +71,6 @@ header {
 .header_button-menu .d-inline-block .list button.dropdown-item:active {
     background: var(--primary-darken-color);
 }
-
 .header_button-menu .d-inline-block .list button {
     text-align: center;
 }
@@ -79,13 +78,20 @@ header {
     border: none;
     box-shadow: 0px 0px 1px #c2c2c2;
 }
+.header_button-menu button i {
+    color: var(--secondary-color);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
 
 @media screen and (max-width: 800px) {
     header {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
-        padding: 1rem 0;
+        padding: 1rem 1.5rem;
     }
     .header_navigation {
         display: none;
