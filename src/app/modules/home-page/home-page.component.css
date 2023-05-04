@@ -15,3 +15,7 @@
 .carousel-caption h3{
     font-size: 2rem;
 }
+
+.container div div{
+    border: solid 1px red;
+}
