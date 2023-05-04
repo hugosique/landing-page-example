@@ -6,6 +6,8 @@ import { HomePageComponent } from './home-page.component';
 
 //Bootstrap
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderModule } from 'src/app/shared/components/header/header.module';
+import { FooterModule } from 'src/app/shared/components/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     NgbCarouselModule,
+    HeaderModule,
+    FooterModule,
   ],
   exports: [
     HomePageComponent,

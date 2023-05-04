@@ -17,8 +17,12 @@ export class HeaderComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
   ) { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     console.log(this.path)
+  }
+
+  public checkRoute(event: any): void {
+    console.log(event);
   }
 
 }
