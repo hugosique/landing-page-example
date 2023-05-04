@@ -1,11 +1,12 @@
-<app-header></app-header>
-
 <div class="content">
     <ngb-carousel>
         <ng-template ngbSlide *ngFor="let img of images;let i = index">
             <div class="picsum-img-wrapper">
                 <img [src]="images[i]" alt="Carousel image" />
-                <!-- <img src="../../../assets/img/carousel/carousel_img_1.jpg" alt=""> -->
+            </div>
+            <div class="carousel-caption">
+                <h3>Viaje com a <strong>Travelling.com</strong></h3>
+                <p>Os melhores preços e destinos estão aqui.</p>
             </div>
         </ng-template>
         <!-- <ng-template ngbSlide>

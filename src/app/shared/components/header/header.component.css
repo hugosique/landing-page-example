@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 header {
     /* position: fixed;
     top: 0;
@@ -14,9 +16,10 @@ header {
 
 .header_title {
     color: var(--secondary-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     user-select: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 .header_navigation a.selected::after {

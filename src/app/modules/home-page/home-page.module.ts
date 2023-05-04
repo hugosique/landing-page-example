@@ -1,4 +1,3 @@
-import { HeaderModule } from './../../shared/components/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -14,7 +13,6 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     CommonModule,
-    HeaderModule,
     NgbCarouselModule,
   ],
   exports: [

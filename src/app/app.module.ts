@@ -1,3 +1,5 @@
+import { FooterModule } from './shared/components/footer/footer.module';
+import { HeaderModule } from './shared/components/header/header.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,6 +19,8 @@ import { ModulesModule } from './modules/modules.module';
     AppRoutingModule,
     NgbModule,
     ModulesModule,
+    HeaderModule,
+    FooterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
