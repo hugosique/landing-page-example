@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 75px;
+}
+.footer p{
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.footer .footer-buttons {
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-buttons a img {
+    height: 30px;
+}
