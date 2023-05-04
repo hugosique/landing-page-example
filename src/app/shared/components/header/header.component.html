@@ -1,0 +1,11 @@
+<header class="header">
+    <h2 class="header_title">Logo</h2>
+    <nav class="header_navigation">
+        <a
+            *ngFor="let menu of menuSelectList"
+            [ngClass]="{'selected': path === menu.path }"
+        >
+            {{ menu.title }}
+        </a>
+    </nav>
+</header>
