@@ -6,6 +6,7 @@
     height: 75px;
 }
 .footer p{
+    font-size: .8rem;
     color: var(--primary-color);
     margin: 0;
 }
