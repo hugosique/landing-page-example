@@ -31,6 +31,10 @@ header {
     transform: scaleX(1);
     transition: transform .5s;
 }
+.header_navigation a.selected:hover::after {
+    transform-origin: center;
+    transform: scaleX(0);
+}
 
 .header_navigation a{
     position: relative;
