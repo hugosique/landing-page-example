@@ -16,6 +16,23 @@
     font-size: 2rem;
 }
 
-.container div div{
-    border: solid 1px red;
+/* Section */
+
+section .main-home_info  {
+    margin: 2rem 0;
+}
+
+section .main-home_info .main-home_grid {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -15px gray;
+}
+
+section .main-home_info .main-home_grid p{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+section .main-home_info .main-home_grid span{
+    font-size: 1rem;
 }
