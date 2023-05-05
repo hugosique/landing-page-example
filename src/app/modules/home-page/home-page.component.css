@@ -97,3 +97,25 @@ section .main-home_info .main-home_grid span{
 .benefits .main-home_benefits .benefits--list .benefits--item .benefits--item_details span{
     font-size: 1rem;
 }
+
+@media screen and (max-width: 575px) {
+    .benefits {
+        border-radius: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .header_navigation {
+        display: none;
+    }
+    .header_title {
+        font-size: 2rem;
+    }
+    .header_button-menu {
+        display: block;
+    }
+}
