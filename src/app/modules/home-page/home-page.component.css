@@ -36,3 +36,64 @@ section .main-home_info .main-home_grid p{
 section .main-home_info .main-home_grid span{
     font-size: 1rem;
 }
+
+.benefits {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 100px;
+}
+
+.benefits .main-home_benefits {
+    border-radius: 10px;
+    padding-bottom: 2rem;
+}
+
+.benefits .main-home_benefits .benefits--title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.benefits .main-home_benefits .benefits--list .benefits--item {
+    display: flex;
+    align-items: center;
+}
+
+.benefits .main-home_benefits .benefits--item{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: .5rem;
+}
+
+.benefits .main-home_benefits .benefits--item i {
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+.benefits .main-home_benefits .benefits--item .benefits--item_details p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+.benefits .main-home_benefits .benefits--item .benefits--item_details span {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.benefits .main-home_benefits .benefits--list .benefits--item i .benefits--item_details{
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits .main-home_benefits .benefits--list .benefits--item .benefits--item_details p{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.benefits .main-home_benefits .benefits--list .benefits--item .benefits--item_details span{
+    font-size: 1rem;
+}
