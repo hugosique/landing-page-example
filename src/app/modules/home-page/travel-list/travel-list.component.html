@@ -1,0 +1,51 @@
+<table class="table table-striped">
+    <thead>
+        <tr> 
+            <th scope="col"></th>
+            <th scope="col">Nome</th>
+            <th scope="col">Destino</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let travel of travelList; index as i">
+            <th scope="row"></th>
+
+            <td>{{ travel.name }}</td>
+            <td>{{ travel.plan }}</td>
+            <td>{{ travel.value | currency: 'BRL' }}</td>
+
+            <td class="table-actions">
+                <a class="table-actions_button">
+                    <i class="pi pi-pencil"></i>
+                </a>
+
+                <a class="table-actions_button">
+                    <i class="pi pi-trash"></i>
+                </a>
+            </td>
+
+            <th scope="row"></th>
+        </tr>
+    </tbody>
+</table>
+
+<div class="travel-list">
+    <div class="travel-list_grid" *ngFor="let country of travelList; index as j">
+        <p>Nome:</p> {{ country.name }}
+        <p>Destino:</p> {{ country.plan }}
+        <p>Valor:</p> {{ country.value | currency: 'BRL' }}
+        <div class="travel-grid_actions">
+            <button class="btn-line">
+                <i class="pi pi-pencil"></i>
+            </button>
+            <button class="btn-line">
+                <i class="pi pi-trash"></i>
+            </button>
+        </div>
+    </div>
+    <!-- <div class="rows">
+
+    </div> -->
+</div>

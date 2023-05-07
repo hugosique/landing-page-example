@@ -1,0 +1,60 @@
+table tbody tr .table-actions .table-actions_button:nth-child(1) {
+    margin-left: .3rem;
+}
+table tbody tr .table-actions .table-actions_button:nth-child(1) i:hover{
+    color: var(--secondary-color);
+}
+
+table tbody tr .table-actions .table-actions_button:nth-child(2) {
+    margin-left: .7rem;
+}
+table tbody tr .table-actions .table-actions_button:nth-child(2) i:hover{
+    color: red;
+}
+
+table tbody tr .table-actions .table-actions_button i{
+    color: var(--secondary-lighten-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+table *{
+    border: none;
+}
+
+/* Travel List */
+
+.travel-list {
+    display: none;
+    flex-direction: column;
+}
+
+.travel-list .travel-list_grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: 2rem;
+}
+
+.travel-list .travel-list_grid .travel-grid_actions {
+    display: flex;
+    flex-direction: column;
+}
+.travel-list .travel-list_grid .travel-grid_actions .btn-line i{
+    color: var(--secondary-lighten-color);
+}
+.travel-list .travel-list_grid p{
+    margin: 0;
+    padding: .2rem 0;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        display: none;
+    }
+    .travel-list {
+        display: flex;
+    }
+}

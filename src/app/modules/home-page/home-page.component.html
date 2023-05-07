@@ -116,4 +116,37 @@
     </div>
 </section>
 
+<section class="form container">
+    <div class="row form-button">
+        <button 
+        type="button"
+        class="primary-button"
+        (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseExample"
+        >
+        {{ isCollapsed ? 'Exibir' : 'Ocultar'}} lista de viajens
+        </button>
+    </div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="form-collapse">
+        <div class="card">
+            <app-travel-list></app-travel-list>
+            <!-- <form class="row card-body form-content">
+                <div class="col-3">
+                    COlumn
+                </div>
+                <div class="col-3">
+                    COlumn
+                </div>
+                <div class="col-3">
+                    COlumn
+                </div>
+                <div class="col-3">
+                    COlumn
+                </div>
+            </form> -->
+        </div>
+    </div>
+</section>
+
 <app-footer></app-footer>

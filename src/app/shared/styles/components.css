@@ -1,0 +1,34 @@
+.btn-line {
+    background: none;
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+.btn-line span {
+    margin-right: .2rem;
+}
+.btn-line:hover {
+    background: var(--primary-darken-color);
+}
+
+.primary-button {
+    background: none;
+    border: solid 2px var(--secondary-color);
+    border-radius: 5px;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s;
+    outline: none;
+}
+
+.primary-button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.primary-button:active {
+    background: var(--secondary-lighten-color);
+    border: solid 2px var(--secondary-lighten-color);
+}

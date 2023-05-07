@@ -20,6 +20,9 @@ header {
     user-select: none;
     font-family: 'Raleway', sans-serif;
 }
+.header_navigation a:active {
+    color: var(--secondary-lighten-color);
+}
 
 .header_navigation a.selected::after {
     left: 0;

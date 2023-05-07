@@ -8,6 +8,8 @@ import { HomePageComponent } from './home-page.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderModule } from 'src/app/shared/components/header/header.module';
 import { FooterModule } from 'src/app/shared/components/footer/footer.module';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { TravelListModule } from './travel-list/travel-list.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { FooterModule } from 'src/app/shared/components/footer/footer.module';
     NgbCarouselModule,
     HeaderModule,
     FooterModule,
+    NgbCollapseModule,
+    TravelListModule,
   ],
   exports: [
     HomePageComponent,
