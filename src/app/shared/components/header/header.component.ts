@@ -10,7 +10,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   public path = this.activatedRoute.snapshot.routeConfig?.path;
-
   public menuSelectList = MENU_SELECT_ITEMS;
 
   constructor(
@@ -19,11 +18,7 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   public ngOnInit(): void {
-    console.log(this.path)
-  }
-
-  public checkRoute(event: any): void {
-    console.log(event);
+    
   }
 
   public navigate(path: string): void {

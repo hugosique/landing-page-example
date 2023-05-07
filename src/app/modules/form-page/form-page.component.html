@@ -6,33 +6,127 @@
             <p>Formulário</p>
         </div>
 
-        <div class="col-12 col-md-6 field">
+        <div class="col-12 col-md-4 field">
             <label for="name">Nome</label>
             <input 
                 type="text" 
                 name="name" 
                 id="name-input"
                 class="input-field"
+                maxlength="100"
+                placeholder="Insira seu nome"
+            >
+        </div>
+        <div class="col-12 col-md-4 field">
+            <label for="email">E-mail</label>
+            <input 
+                type="email" 
+                name="email" 
+                id="email-input"
+                class="input-field"
+                maxlength="100"
+                placeholder="Insira seu e-mail"
+            >
+        </div>
+        <div class="col-12 col-md-4 field">
+            <label for="tel">Telefone</label>
+            <input 
+                type="text"
+                name="tel" 
+                id="tel-input"
+                class="input-field"
+                mask="(00)0 0000-0000"
+                placeholder="(xx)x xxxx-xxxx"
+            >
+        </div>
+
+        <div class="col-12 col-md-4 field">
+            <label for="cep">cep</label>
+            <input 
+                type="text"
+                name="cep" 
+                id="cep-input"
+                class="input-field"
+                mask="00000-000"
+                maxlength="15"
+                placeholder="00000-000"
             >
         </div>
         <div class="col-12 col-md-6 field">
-            <label for="name">E-mail</label>
+            <label for="address">Endereço</label>
             <input 
-                type="text" 
-                name="name" 
-                id="name-input"
+                type="text"
+                name="address" 
+                id="address-input"
+                maxlength="100"
                 class="input-field"
             >
         </div>
-        <div class="col-3 field">
-            <label for="name">Telefone</label>
+        <div class="col-6 col-md-2 field">
+            <label for="addressNumber">Número</label>
             <input 
-                type="text" 
-                name="name" 
-                id="name-input"
+                type="number"
+                name="addressNumber" 
+                id="addressNumber-input"
                 class="input-field"
-                masl
+                placeholder="Ex: 999"
             >
+        </div>
+
+        <div class="col-6 col-md-3 field">
+            <label for="addressComplement">Complemento</label>
+            <input 
+                type="text"
+                name="addressComplement" 
+                id="addressComplement-input"
+                class="input-field"
+            >
+        </div>
+        <div class="col-6 col-md-3 field">
+            <label for="city">Cidade</label>
+            <input 
+                type="text"
+                name="city" 
+                id="city-input"
+                class="input-field"
+            >
+        </div>
+        <div class="col-6 col-md-3 field">
+            <label for="uf">Estado</label>
+            <input 
+                type="text"
+                name="uf" 
+                id="uf-input"
+                class="input-field"
+            >
+        </div>
+        <div class="col-12 col-md-3 field">
+            <label for="country">País</label>
+            <input 
+                type="text"
+                name="country" 
+                id="country-input"
+                class="input-field"
+    
+            >
+        </div>
+
+        <div class="col-12 col-md-4 field">
+            <label for="plan-dropdown">Plano</label>
+
+            <select id="plans" class="select-field" (change)="selectPlan($event)">
+                <option value="madrid">Madrid</option>
+                <option value="rio">Rio de janeiro</option>
+                <option value="paris">Paris</option>
+                <option value="brugge">Bruxelas</option>
+                <option value="pequim">Pequim</option>
+                <option value="wellington">Wellington</option>
+                <option value="cairo">Cairo</option>
+                <option value="cityOfPanama">Cidade do panáma</option>
+                <option value="roma">Roma</option>
+                <option value="tokyo">Tóquio</option>
+                <option value="newYork">Nova iorque</option>
+            </select>
         </div>
     </form>
 </div>

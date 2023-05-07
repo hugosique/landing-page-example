@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 //Modules
 import { HomePageModule } from './home-page/home-page.module';
 import { FormPageModule } from './form-page/form-page.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,6 +15,8 @@ import { FormPageModule } from './form-page/form-page.module';
   exports: [
     HomePageModule,
     FormPageModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class ModulesModule { }

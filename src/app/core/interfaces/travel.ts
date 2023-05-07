@@ -2,15 +2,13 @@ export interface I_Travel {
     id?: number,
     name: string,
     email: string,
-    tel: string;
-    cep: string,
-    address: string;
-    addressNumber: string;
-    addressComplement?: string;
-    district: string;
-    city: string;
-    uf: string;
-    country: string;
+    tel?: string;
+    cep?: string,
+    address?: string;
+    addressNumber?: string;
+    city?: string;
+    uf?: string;
+    country?: string;
     destiny: string;
     tripValue: number;
 };
