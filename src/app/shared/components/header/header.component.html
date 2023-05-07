@@ -9,13 +9,14 @@
             {{ menu.title }}
         </a>
     </nav>
+
     <div class="header_button-menu">
         <div ngbDropdown class="d-inline-block">
-            <button class="button-menu--item btn-line" ngbDropdownToggle>
+            <button class="button-menu--item btn-line" ngbDropdownToggle >
                 <i class="pi pi-bars"></i>
             </button>
             <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="list">
-                <button *ngFor="let list of menuSelectList" ngbDropdownItem>
+                <button *ngFor="let list of menuSelectList" ngbDropdownItem (click)="navigate(list.path)">
                     {{ list.title }}
                 </button>
             </div>
