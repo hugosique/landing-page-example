@@ -125,7 +125,7 @@
         [attr.aria-expanded]="!isCollapsed"
         aria-controls="collapseExample"
         >
-        {{ isCollapsed ? 'Exibir' : 'Ocultar'}} lista de viajens
+            {{ isCollapsed ? 'Exibir' : 'Ocultar'}} lista de viajens
         </button>
     </div>
     <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" class="form-collapse">

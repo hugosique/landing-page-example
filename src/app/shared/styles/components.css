@@ -21,6 +21,7 @@
     font-weight: bold;
     transition: .3s;
     outline: none;
+    color: var(--secondary-color);
 }
 
 .primary-button:hover {
