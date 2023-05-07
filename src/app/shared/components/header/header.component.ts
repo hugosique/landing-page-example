@@ -1,6 +1,6 @@
 import { MENU_SELECT_ITEMS } from './header-list.const';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
   ) { }
 
   public ngOnInit(): void {
@@ -23,6 +24,10 @@ export class HeaderComponent implements OnInit {
 
   public checkRoute(event: any): void {
     console.log(event);
+  }
+
+  public navigate(path: string): void {
+    this.router.navigate([path]);
   }
 
 }

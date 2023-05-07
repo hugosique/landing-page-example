@@ -1,6 +1,7 @@
 import { HomePageComponent } from './modules/home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormPageComponent } from './modules/form-page/form-page.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: "home",
     component: HomePageComponent,
+  },
+  {
+    path: "registration",
+    component: FormPageComponent,
   },
 ];
 

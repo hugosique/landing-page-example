@@ -4,11 +4,11 @@ export const MENU_SELECT_ITEMS = [
         path: 'home',
     },
     {
-        title: 'Sobre',
-        path: 'about',
+        title: 'Planos',
+        path: 'plans',
     },
     {
-        title: 'Serviços',
-        path: 'services',
+        title: 'Cadastro',
+        path: 'registration',
     }
 ];
