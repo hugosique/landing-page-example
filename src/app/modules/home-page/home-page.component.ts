@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HomePageComponent implements OnInit {
 
   public images = [1, 2, 3, 4].map((n) => `../../../assets/img/carousel/carousel_img_${n}.jpg`);
-  public isCollapsed: boolean = false;
+  public isCollapsed: boolean = true;
 
   constructor(
     private activatedRoute: ActivatedRoute,
