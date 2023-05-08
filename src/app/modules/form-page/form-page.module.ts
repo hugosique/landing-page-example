@@ -9,8 +9,8 @@ import { FormPageComponent } from './form-page.component';
 import { HeaderModule } from 'src/app/shared/components/header/header.module';
 import { FooterModule } from 'src/app/shared/components/footer/footer.module';
 import { NgxMaskModule } from 'ngx-mask';
-
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,9 @@ import { NgxMaskModule } from 'ngx-mask';
     HeaderModule,
     FooterModule,
     NgxMaskModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   exports: [
     FormPageComponent

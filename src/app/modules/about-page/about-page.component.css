@@ -1,0 +1,18 @@
+.about .about-main_info  {
+    margin: 2rem 0;
+}
+
+.about .about-main_info .about-main_item {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -15px gray;
+}
+
+.about .about-main_info .about-main_item  p{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.about .about-main_info .about-main_item  span{
+    font-size: 1rem;
+}

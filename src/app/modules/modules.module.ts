@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 //Modules
 import { HomePageModule } from './home-page/home-page.module';
 import { FormPageModule } from './form-page/form-page.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutPageModule } from './about-page/about-page.module';
+
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -15,8 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   exports: [
     HomePageModule,
     FormPageModule,
-    FormsModule,
-    ReactiveFormsModule,
+    AboutPageModule,
+    NoopAnimationsModule,
   ]
 })
 export class ModulesModule { }

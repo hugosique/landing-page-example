@@ -1,13 +1,13 @@
 <app-header></app-header>
 
 <div class="container form">
-    <form class="row">
+    <form class="row" [formGroup]="form">
         <div class="col-12 form-title">
             <p>Formulário</p>
         </div>
 
         <div class="col-12 col-md-4 field">
-            <label for="name">Nome</label>
+            <label for="name">Nome <span>*</span></label>
             <input 
                 type="text" 
                 name="name" 
@@ -15,10 +15,11 @@
                 class="input-field"
                 maxlength="100"
                 placeholder="Insira seu nome"
+                formControlName="name"
             >
         </div>
         <div class="col-12 col-md-4 field">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail <span>*</span></label>
             <input 
                 type="email" 
                 name="email" 
@@ -26,6 +27,7 @@
                 class="input-field"
                 maxlength="100"
                 placeholder="Insira seu e-mail"
+                formControlName="email"
             >
         </div>
         <div class="col-12 col-md-4 field">
@@ -37,6 +39,7 @@
                 class="input-field"
                 mask="(00)0 0000-0000"
                 placeholder="(xx)x xxxx-xxxx"
+                formControlName="tel"
             >
         </div>
 
@@ -50,6 +53,8 @@
                 mask="00000-000"
                 maxlength="15"
                 placeholder="00000-000"
+                formControlName="cep"
+                (change)="getCEP()"
             >
         </div>
         <div class="col-12 col-md-6 field">
@@ -60,6 +65,7 @@
                 id="address-input"
                 maxlength="100"
                 class="input-field"
+                formControlName="address"
             >
         </div>
         <div class="col-6 col-md-2 field">
@@ -70,6 +76,7 @@
                 id="addressNumber-input"
                 class="input-field"
                 placeholder="Ex: 999"
+                formControlName="addressNumber"
             >
         </div>
 
@@ -80,6 +87,8 @@
                 name="addressComplement" 
                 id="addressComplement-input"
                 class="input-field"
+                formControlName="addressComplement"
+                placeholder="Complemento..."
             >
         </div>
         <div class="col-6 col-md-3 field">
@@ -89,6 +98,7 @@
                 name="city" 
                 id="city-input"
                 class="input-field"
+                formControlName="city"
             >
         </div>
         <div class="col-6 col-md-3 field">
@@ -98,6 +108,7 @@
                 name="uf" 
                 id="uf-input"
                 class="input-field"
+                formControlName="uf"
             >
         </div>
         <div class="col-12 col-md-3 field">
@@ -107,14 +118,15 @@
                 name="country" 
                 id="country-input"
                 class="input-field"
-    
+                placeholder="Ex: Brasil"
             >
         </div>
 
         <div class="col-12 col-md-4 field">
-            <label for="plan-dropdown">Plano</label>
+            <label for="plan-dropdown">Plano <span>*</span></label>
 
             <select id="plans" class="select-field" (change)="selectPlan($event)">
+                <option value=""></option>
                 <option value="madrid">Madrid</option>
                 <option value="rio">Rio de janeiro</option>
                 <option value="paris">Paris</option>
@@ -129,6 +141,24 @@
             </select>
         </div>
     </form>
+
+    <div class="col-12 form-btn">
+        <button 
+            type="button"
+            class="line-button"
+            (click)="clearForm()"
+        >
+            Limpar
+        </button>
+
+        <button 
+            type="button"
+            class="primary-button"
+            (click)="submitForm()"
+        >
+            Cadastrar
+        </button>
+    </div>
 </div>
 
 <app-footer></app-footer>

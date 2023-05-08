@@ -3,7 +3,6 @@ import { Observable } from 'rxjs/internal/Observable';
 import { I_Travel } from 'src/app/core/interfaces/travel';
 import { HttpClient } from '@angular/common/http';
 
-
 @Injectable({
   providedIn: 'root'
 })

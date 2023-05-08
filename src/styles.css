@@ -13,3 +13,7 @@
 html {
     background: var(--secondary-color);
 }
+
+label span {
+    color: red;
+}

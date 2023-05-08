@@ -34,11 +34,31 @@
     border: solid 2px var(--secondary-lighten-color);
 }
 
+.line-button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s;
+    outline: none;
+    color: var(--secondary-color);
+}
+
+.line-button:hover {
+    background: var(--primary-darken-color);
+}
+
+.line-button:active {
+    background: var(--primary-darken-color);
+}
+
 .input-field {
     background: none;
-    border: solid 1px #c2c2c2;
+    border: solid 1px #d2d2d2;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: .6rem 1rem;
     outline: none;
     transition: .3s;

@@ -5,6 +5,7 @@ export interface I_Travel {
     tel?: string;
     cep?: string,
     address?: string;
+    addressComplement?: string,
     addressNumber?: string;
     city?: string;
     uf?: string;
