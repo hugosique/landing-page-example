@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { MessageService } from '../../services/message.service';
 
 @Component({
   selector: 'app-toast',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToastComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public messageService: MessageService,
+  ) { }
 
   ngOnInit(): void {
   }
+
+  isTemplate(toast: any) {
+		return toast.textOrTpl instanceof TemplateRef;
+	}
 
 }

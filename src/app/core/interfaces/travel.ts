@@ -13,10 +13,3 @@ export interface I_Travel {
     destiny: string;
     tripValue: number;
 };
-
-export interface I_TravelList {
-    id?: number,
-    name: string,
-    destiny: string,
-    tripValue: number,
-};

@@ -1,0 +1,6 @@
+ngb-toast {
+    position: fixed;
+    top: 80px;
+    right: 10px;
+    z-index: 1200;
+}

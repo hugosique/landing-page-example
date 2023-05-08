@@ -1,4 +1,7 @@
+import { TravelService } from 'src/app/shared/services/travel.service';
 import { Component, OnInit } from '@angular/core';
+import { I_Travel } from 'src/app/core/interfaces/travel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-travel-list',
@@ -7,22 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TravelListComponent implements OnInit {
 
-  public travelList: any[] = [
-    {
-      name: 'Hugo Otávio Silva de Siqueira',
-      plan: 'Russia/Ukraine',
-      value: 250,
-    },
-    {
-      name: 'Michael Jackson de Oliveira',
-      plan: 'Nova Iorque',
-      value: 350,
-    },
-  ];
+  public travelList: I_Travel[] = [];
 
-  constructor() { }
+  constructor(
+    private travelService: TravelService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+    this.getList();
+  }
+
+  public getList(): void {
+    this.travelList = this.travelService.getTravelList();
+  }
+
+  public editTravel(id: any): void {
+    this.router.navigate([`registration/edit/${id}`]);
+  }
+
+  public deleteTravel(id: any): void {
+    this.travelService.deleteTravel(id);
   }
 
 }

@@ -15,7 +15,7 @@ export class TravelService {
   ) { }
 
   createTravel(travel: I_Travel) {
-    localStorage.setItem('tbTravel', JSON.stringify(travel));
+    localStorage.setItem('tbTravel', JSON.stringify(travel)); 
   }
   
   getTravelList(): I_Travel[] {
@@ -32,13 +32,13 @@ export class TravelService {
     return this.travelDataService.find(travels => travels.id === id);
   }
 
-  deleteTravel(id: number) {
+  deleteTravel(id: any) {
     let index = this.travelDataService.findIndex(travels => travels.id === id);
     
     this.travelDataService.splice(index, 1);
   }
 
-  updateTravel(id: number, travel: I_Travel) {
+  updateTravel(id: any, travel: I_Travel) {
     let index = this.travelDataService.findIndex(element => element.id === id);
     
     this.travelDataService.splice(index, 1, travel);

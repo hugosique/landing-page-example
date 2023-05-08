@@ -19,7 +19,7 @@ const routes: Routes = [
     component: FormPageComponent,
   },
   {
-    path: "registration/edit",
+    path: "registration/edit/:id",
     component: FormPageComponent,
   },
   {

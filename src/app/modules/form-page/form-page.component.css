@@ -9,8 +9,21 @@
     flex-direction: column;
     margin-top: 1rem;
 }
+
 .form .row .field label{
     font-size: 1.2rem;
+}
+
+.form .row .total{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form .row .total span{
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .form .form-title p {

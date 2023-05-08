@@ -12,6 +12,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastModule } from 'src/app/shared/components/toast/toast.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform
     HttpClientModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
+    ToastModule,
   ],
   exports: [
     FormPageComponent

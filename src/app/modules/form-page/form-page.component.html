@@ -119,6 +119,7 @@
                 id="country-input"
                 class="input-field"
                 placeholder="Ex: Brasil"
+                formControlName="country"
             >
         </div>
 
@@ -127,7 +128,7 @@
 
             <select id="plans" class="select-field" (change)="selectPlan($event)">
                 <option value=""></option>
-                <option value="madrid">Madrid</option>
+                <option value="madrid" >Madrid</option>
                 <option value="rio">Rio de janeiro</option>
                 <option value="paris">Paris</option>
                 <option value="brugge">Bruxelas</option>
@@ -139,6 +140,12 @@
                 <option value="tokyo">Tóquio</option>
                 <option value="newYork">Nova iorque</option>
             </select>
+        </div>
+
+        <div *ngIf="travelPrice !== 0" class="col-12 col-md-8 total">
+            <span>
+                {{ travelPrice | currency: 'BRL' }}
+            </span>
         </div>
     </form>
 
@@ -156,9 +163,11 @@
             class="primary-button"
             (click)="submitForm()"
         >
-            Cadastrar
+            {{ travelId ? 'Atualizar' : 'Cadastrar'}}
         </button>
     </div>
 </div>
+
+<app-toast></app-toast>
 
 <app-footer></app-footer>

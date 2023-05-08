@@ -1,4 +1,4 @@
-<table class="table table-striped">
+<table *ngIf="travelList.length" class="table table-striped">
     <thead>
         <tr> 
             <th scope="col"></th>
@@ -13,15 +13,15 @@
             <th scope="row"></th>
 
             <td>{{ travel.name }}</td>
-            <td>{{ travel.plan }}</td>
-            <td>{{ travel.value | currency: 'BRL' }}</td>
+            <td>{{ travel.destiny }}</td>
+            <td>{{ travel.tripValue | currency: 'BRL' }}</td>
 
             <td class="table-actions">
-                <a class="table-actions_button">
+                <a class="table-actions_button" (click)="editTravel(travel.id)">
                     <i class="pi pi-pencil"></i>
                 </a>
 
-                <a class="table-actions_button">
+                <a class="table-actions_button" (click)="deleteTravel(travel.id)">
                     <i class="pi pi-trash"></i>
                 </a>
             </td>
@@ -31,21 +31,18 @@
     </tbody>
 </table>
 
-<div class="travel-list">
-    <div class="travel-list_grid" *ngFor="let country of travelList; index as j">
-        <p>Nome:</p> {{ country.name }}
-        <p>Destino:</p> {{ country.plan }}
-        <p>Valor:</p> {{ country.value | currency: 'BRL' }}
+<div *ngIf="travelList.length" class="travel-list">
+    <div class="travel-list_grid" *ngFor="let list of travelList; index as j">
+        <p>Nome:</p> {{ list.name }}
+        <p>Destino:</p> {{ list.destiny }}
+        <p>Valor:</p> {{ list.tripValue | currency: 'BRL' }}
         <div class="travel-grid_actions">
-            <button class="btn-line">
+            <button class="btn-line" (click)="editTravel(list.id)">
                 <i class="pi pi-pencil"></i>
             </button>
-            <button class="btn-line">
+            <button class="btn-line" (click)="deleteTravel(list.id)">
                 <i class="pi pi-trash"></i>
             </button>
         </div>
     </div>
-    <!-- <div class="rows">
-
-    </div> -->
 </div>
